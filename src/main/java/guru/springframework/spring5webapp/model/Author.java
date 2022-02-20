@@ -58,13 +58,13 @@ public class Author {
         this.books = books;
     }
 
+    // do not print binded entities otherwise infinite loop due to circular references
     @Override
     public String toString() {
         return "Author{" +
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", books=" + books +
                 '}';
     }
 
